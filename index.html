@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRIT MYST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --accent: #e0c28d;
+      --text: #f4f4f4;
+      --muted: #999;
+      --card-bg: #1a1a1a;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 18px;
+      color: var(--muted);
+    }
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .hero {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .teaser {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .product-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
+    .product-card h3 {
+      color: var(--accent);
+      margin: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+    }
+    .product-card p {
+      color: #ccc;
+      font-size: 16px;
+      margin: 0 20px 30px;
+    }
+    .signup {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .signup h2 {
+      font-size: 32px;
+      color: var(--accent);
+    }
+    .signup input[type=email] {
+      padding: 14px;
+      width: 280px;
+      border: none;
+      border-radius: 6px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    .signup button {
+      padding: 14px 24px;
+      background-color: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .signup button:hover {
+      background-color: #d1aa6a;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GRIT MYST</h1>
+    <p>Raw Nature. Ritual Power. All Natural.</p>
+  </header>
+
+  <section class="hero">
+    <p><strong>GRIT MYST</strong> is a premium self-care line for men who live boldly and recover harder. Every bar, balm, and bottle is forged in the USA with 100% natural ingredients — no synthetics, no shortcuts.</p>
+    <p>From pine-scented charcoal soap bricks to cooling post-plunge sprays, our products are built for modern men who move with purpose and rest with ritual.</p>
+    <p>This isn't skincare — it's battle prep. Get gritty. Stay mystic.</p>
+  </section>
+
+  <section class="teaser">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1613463171037-fc16ce8e94c2?fit=crop&w=900&q=80" alt="Charcoal Pine Soap Brick">
+      <h3>Charcoal Pine Soap Brick</h3>
+      <p>Crafted with activated charcoal, bentonite clay, and wild pine oil. It's a black slab of detox with forest power.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1607083206962-d26c5d2b1c10?fit=crop&w=900&q=80" alt="Recovery Balm Tin">
+      <h3>Recovery Balm</h3>
+      <p>Beard, skin, muscle — this all-in-one balm brings fire and calm with arnica, peppermint, and black spruce.</p>
+    </div>
+  </section>
+
+  <div class="signup">
+    <h2>Launching Soon.</h2>
+    <p>Be first to know when GRIT MYST drops.</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Join the List</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 GRIT MYST. All rights reserved.
+  </footer>
+</body>
+</html>
